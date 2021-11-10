@@ -1,0 +1,54 @@
+{
+  "name": "vue3-kakao-sdk",
+  "private": false,
+  "version": "0.1.1",
+  "description": "Kakao SDK Plugin for Vue3 with Composition API",
+  "scripts": {
+    "build": "rm -rf target && concurrently \"tsc\" \"rollup -c\" && vite build && mv target/vite/* target/"
+  },
+  "main": "target/vue3-kakao-sdk.es.js",
+  "module": "target/vue3-kakao-sdk.es.js",
+  "types": "target/vue3-kakao-sdk.d.ts",
+  "exports": {
+    ".": {
+      "import": "./target/vue3-kakao-sdk.es.js"
+    }
+  },
+  "author": {
+    "name": "eggplantiny",
+    "email": "eggplantiny@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eggplantiny/vue3-kakao-sdk.git"
+  },
+  "homepage": "https://github.com/eggplantiny/vue3-kakao-sdk",
+  "files": [
+    "target/vue3-kakao-sdk.es.js",
+    "target/vue3-kakao-sdk.d.ts"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "vue",
+    "vue-kakao",
+    "vue-kakao-sdk",
+    "vue3-kakao-sdk",
+    "composition api",
+    "vue kakao sdk",
+    "kakao sdk",
+    "kakao"
+  ],
+  "devDependencies": {
+    "@types/node": "^16.11.7",
+    "@vitejs/plugin-vue": "^1.9.3",
+    "concurrently": "^6.3.0",
+    "rollup-plugin-dts": "^4.0.1",
+    "typescript": "^4.4.3",
+    "vite": "^2.6.4",
+    "vue": "^3.2.16",
+    "vue-tsc": "^0.3.0"
+  },
+  "peerDependencies": {
+    "vue": "^3.0.0"
+  }
+}
