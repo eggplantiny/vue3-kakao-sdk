@@ -1,7 +1,7 @@
 {
   "name": "vue3-kakao-sdk",
   "private": false,
-  "version": "0.1.2",
+  "version": "0.2.1",
   "description": "Kakao SDK Plugin for Vue3 with Composition API",
   "scripts": {
     "build": "rm -rf target && concurrently \"tsc\" \"rollup -c\" && vite build && mv target/vite/* target/"

@@ -39,12 +39,12 @@ npm install vue3-kakao-sdk
 ```js
 //  main.js
 import { createApp } from 'vue'
-import Vue3KakaoSdk from 'vue3-kakao-sdk'
-
-const apiKey = 'Your Kakao API Javascript Key'
+import { createVueKakaoSdk } from 'vue3-kakao-sdk'
 
 // You have to pass your "Kakao SDK Javascript apiKey"
-const app = createApp(App).use(Vue3KakaoSdk, { apiKey })
+const app = createApp(App)
+  .use(createVueKakaoSdk('Your Kakao API Javascript Key 😊'))
+  .mount('#app')
 ```
 
 ```vue

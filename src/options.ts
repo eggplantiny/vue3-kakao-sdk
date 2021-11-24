@@ -1,7 +1,7 @@
 export interface VueKakaoSdkOptions {
-  apiKey: string
-  scriptUrl: string
-  scriptId: string
+  apiKey: string;
+  scriptUrl: string;
+  scriptId: string;
 }
 
 export const defaultKakaoSdkOptions: VueKakaoSdkOptions = {
